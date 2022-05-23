@@ -94,13 +94,6 @@
     is-wsl "^2.2.0"
     node-fetch "^3.2.3"
 
-"@astrojs/turbolinks@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@astrojs/turbolinks/-/turbolinks-0.1.3.tgz#17cda1db05df3ae3dd015140683882b8c5cc7740"
-  integrity sha512-vu5j2KHhOXzIgQgDM5qpBMV1i23RzrlD/OYfX4y04PLjcJPVCdLoxKYlEqW5FH6kBAEYiiY+XtMxfTJ0qZwFBw==
-  dependencies:
-    turbolinks "^5.2.0"
-
 "@astrojs/webapi@^0.11.1":
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/@astrojs/webapi/-/webapi-0.11.1.tgz#d9b57e86e806944cefea2f117f2d5898ebc730ee"
@@ -3226,11 +3219,6 @@ tsm@^2.1.4, tsm@^2.2.1:
   integrity sha512-qvJB0baPnxQJolZru11mRgGTdNlx17WqgJnle7eht3Vhb+VUR4/zFA5hFl6NqRe7m8BD9w/6yu0B2XciRrdoJA==
   dependencies:
     esbuild "^0.14.0"
-
-turbolinks@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/turbolinks/-/turbolinks-5.2.0.tgz#e6877a55ea5c1cb3bb225f0a4ae303d6d32ff77c"
-  integrity sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==
 
 type-fest@^0.13.1:
   version "0.13.1"
