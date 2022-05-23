@@ -1,25 +1,26 @@
 ---
 export interface Props {
-    title: string,
-    body: string,
-    href: string,
+	title: string,
+	body: string,
+	href: string,
 }
-const {href, title, body} = Astro.props;
+const { href, title, body } = Astro.props;
 ---
-<li class="link-card">
-    <a href={href}>
-        <h2>
-            {title}
-            <span>&rarr;</span>
-        </h2>
-        <p>
-            {body}
-            <slot name="icon" />
-        </p>
-    </a>
-</li>
-<style>
 
+<li class="link-card">
+	<a href={href}>
+		<h2>
+			{title}
+			<span>&rarr;</span>
+		</h2>
+		<p>
+			{body}
+			<slot name="icon" />
+		</p>
+	</a>
+</li>
+
+<style>
 	:root {
 		--link-gradient: linear-gradient(45deg, #4F39FA, #DA62C4 30%, var(--color-border) 60%);
 	}
@@ -35,7 +36,7 @@ const {href, title, body} = Astro.props;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
-	.link-card > a {
+	.link-card>a {
 		width: 100%;
 		text-decoration: none;
 		line-height: 1.4;
@@ -50,11 +51,11 @@ const {href, title, body} = Astro.props;
 		margin: 0;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
-    
-    p {
-        margin-top: 0.75rem;
-        margin-bottom: 0;
-    }
+
+	p {
+		margin-top: 0.75rem;
+		margin-bottom: 0;
+	}
 
 	h2 span {
 		display: inline-block;
