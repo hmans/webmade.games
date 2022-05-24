@@ -1,32 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-
-
-
-
 ---
 
 <Layout>
   <h1>Web-Made Games</h1>
 
-  <ul role="list" class="link-card-grid">
-    <Card href="/about" title="The Introduction" body="What Web-Made Games are, and why they matter." />
-    <Card href="/games" title="The Games" body="Games made with the Web, on the Web, for the Web." />
-    <Card href="/stack" title="The Stack" body="Engines, frameworks and libraries for creating Web-Made Games." />
-    <Card href="/community" title="The Community" body="Drop by and say Hi!" />
-  </ul>
+  <h2>Games made on the Web, with the Web, for the Web</h2>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis perspiciatis sunt tempore alias consequuntur
+    odit necessitatibus voluptatum at earum expedita, qui maxime dolorum, est voluptas. Cupiditate commodi nobis veniam
+    accusamus.</p>
+
+  <h2>The Stack</h2>
+
+  <h2>The Games</h2>
+
+  <h2>The Community</h2>
 </Layout>
-
-<style>
-  h1 {
-    margin: 2rem 0;
-  }
-
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
-  }
-</style>
