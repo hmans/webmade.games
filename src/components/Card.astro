@@ -13,8 +13,11 @@ const { href, title, body } = Astro.props;
 			{title}
 			<span>&rarr;</span>
 		</h3>
-		<p>
+		<p class="body">
 			{body}
+		</p>
+		<p class="url">
+			{href}
 		</p>
 	</a>
 </li>
@@ -50,6 +53,16 @@ const { href, title, body } = Astro.props;
 	p {
 		margin-top: 0.75rem;
 		margin-bottom: 0;
+	}
+
+	p.body {
+		height: 10ch;
+		overflow-y: scroll;
+	}
+
+	p.url {
+		opacity: 0.5;
+		font-size: 80%;
 	}
 
 	.link-card:is(:hover, :focus-within) {
