@@ -1,5 +1,5 @@
 {
-  "astro.format.newLineAfterFrontmatter": false,
+  "astro.format.newLineAfterFrontmatter": true,
   "astro.format.indentFrontmatter": false,
   "html.format.wrapAttributes": "aligned-multiple",
   "html.format.wrapLineLength": 80,
