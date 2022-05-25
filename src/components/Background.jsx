@@ -1,6 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useRef } from "react";
-import { degToRad } from "three/src/math/MathUtils";
 
 const Thingy = () => {
   const mesh = useRef();
