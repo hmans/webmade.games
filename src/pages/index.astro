@@ -4,10 +4,13 @@ import Stack from './_stack.astro';
 import Community from './_community.astro';
 import Games from './_games.astro';
 import Introduction from './_introduction.astro';
+import { Background } from "../components/Background.tsx"
 ---
 
 <Layout>
   <h1>Web-Made Games</h1>
+
+  <Background client:visible />
 
   <Introduction />
   <Games />
