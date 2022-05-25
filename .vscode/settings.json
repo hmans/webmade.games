@@ -1,4 +1,5 @@
 {
-  "html.format.wrapAttributes": "force-expand-multiline",
+  "html.format.wrapAttributes": "aligned-multiple",
+  "html.format.wrapLineLength": 80,
   "html.format.maxPreserveNewLines": 1
 }
