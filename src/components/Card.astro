@@ -9,13 +9,12 @@ const { href, title, body } = Astro.props;
 
 <li class="link-card">
 	<a href={href}>
-		<h2>
+		<h3>
 			{title}
 			<span>&rarr;</span>
-		</h2>
+		</h3>
 		<p>
 			{body}
-			<slot name="icon" />
 		</p>
 	</a>
 </li>
@@ -25,29 +24,24 @@ const { href, title, body } = Astro.props;
 		--link-gradient: linear-gradient(45deg, #fac339, #de6127 30%, var(--color-border) 60%);
 	}
 
-	.link-card {
+	li.link-card {
 		list-style: none;
 		display: flex;
-		padding: 0.15rem;
-		background-image: var(--link-gradient);
-		background-size: 400%;
-		border-radius: 0.5rem;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
-	.link-card>a {
+	li.link-card>a {
 		width: 100%;
 		text-decoration: none;
-		line-height: 1.4;
 		padding: 1em 1.3em;
-		border-radius: 0.35rem;
-		color: var(--text-color);
+		border-radius: 2px;
 		background-color: white;
 		opacity: 0.8;
+		color: var(--color-text);
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 2px;
 	}
 
-	h2 {
+	h3 {
+		font-size: 110%;
 		margin: 0;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
@@ -57,20 +51,15 @@ const { href, title, body } = Astro.props;
 		margin-bottom: 0;
 	}
 
-	h2 span {
-		display: inline-block;
-		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
 	}
 
-	.link-card:is(:hover, :focus-within) h2 {
+	.link-card:is(:hover, :focus-within) h3 {
 		color: #39aafa;
 	}
 
-	.link-card:is(:hover, :focus-within) h2 span {
+	.link-card:is(:hover, :focus-within) h3 span {
 		transform: translateX(2px);
 	}
 </style>

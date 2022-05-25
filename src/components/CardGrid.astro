@@ -1,0 +1,12 @@
+<ul role="list" class="card-grid">
+  <slot />
+</ul>
+
+<style>
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>

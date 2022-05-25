@@ -1,9 +1,16 @@
+---
+import Card from "../components/Card.astro";
+import CardGrid from "../components/CardGrid.astro";
+
+---
+
 <section>
   <h2>The Stack</h2>
 
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis unde provident at eius velit, animi quisquam
-    amet ab beatae esse distinctio, iusto numquam sunt porro quibusdam quo facilis. Magnam, explicabo.</p>
-
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint quaerat dolorem ullam tempora ipsum fuga omnis
-    soluta aperiam accusantium, quibusdam maxime molestias cum debitis eaque explicabo amet mollitia? Deleniti, eos.</p>
+  <CardGrid>
+    <Card title="Three.js" body="3D in the browser" href="https://threejs.org" />
+    <Card title="Three.js" body="3D in the browser" href="https://threejs.org" />
+    <Card title="Three.js" body="3D in the browser" href="https://threejs.org" />
+    <Card title="Three.js" body="3D in the browser" href="https://threejs.org" />
+  </CardGrid>
 </section>
