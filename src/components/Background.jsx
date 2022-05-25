@@ -1,3 +1,4 @@
+import { PerspectiveCamera } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
@@ -9,8 +10,8 @@ const Thingy = () => {
   });
 
   return (
-    <mesh ref={mesh}>
-      <boxGeometry />
+    <mesh ref={mesh} position={[6, -6, 0]} scale={10}>
+      <dodecahedronBufferGeometry />
       <meshStandardMaterial />
     </mesh>
   );
@@ -30,6 +31,7 @@ export const Background = () => (
     <Canvas>
       <ambientLight intensity={0.1} />
       <directionalLight color="red" position={[0, 0, 5]} />
+      <PerspectiveCamera position={[0, 0, 20]} makeDefault />
 
       <Thingy />
     </Canvas>
