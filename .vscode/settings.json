@@ -1,4 +1,6 @@
 {
+  "astro.format.newLineAfterFrontmatter": false,
+  "astro.format.indentFrontmatter": false,
   "html.format.wrapAttributes": "aligned-multiple",
   "html.format.wrapLineLength": 80,
   "html.format.maxPreserveNewLines": 1
