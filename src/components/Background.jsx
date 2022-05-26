@@ -28,7 +28,7 @@ export const Background = () => (
       zIndex: -1,
     }}
   >
-    <Canvas>
+    <Canvas dpr={0.1}>
       <ambientLight intensity={0.1} />
       <directionalLight position={[0, 0, 5]} />
       <PerspectiveCamera position={[0, 0, 20]} makeDefault />
