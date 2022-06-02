@@ -1,8 +1,16 @@
 ---
 import data from "../data/libraries.yml"
-const { libraries } = data
+import { Library } from "../types";
+
+const libraries: Library[] = data.libraries
 ---
 
 <section>
   <h2>Libraries</h2>
+
+  {libraries.map(library => (
+  <div>
+    <p><a href={library.url}>{library.name}</a> {library.tags}r</p>
+  </div>
+  ))}
 </section>
