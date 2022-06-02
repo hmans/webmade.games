@@ -6,7 +6,7 @@ const libraries: Library[] = [
     url: "https://threejs.org",
     description:
       "A fully-featured WebGL and WebGPU game engine written in and for use with TypeScript.",
-    tags: ["renderer", "webgl"],
+    categories: ["renderer", "webgl", "engines"],
   },
 ];
 

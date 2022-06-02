@@ -11,6 +11,8 @@
   "devDependencies": {
     "@astrojs/react": "^0.1.2",
     "@rollup/plugin-yaml": "^3.1.0",
+    "@types/react": "^18.0.10",
+    "@types/react-dom": "^18.0.5",
     "astro": "^1.0.0-beta.31",
     "react": "^17.0.2 || ^18.0.0",
     "react-dom": "^17.0.2 || ^18.0.0"
