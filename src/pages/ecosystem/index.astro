@@ -1,0 +1,13 @@
+---
+import Layout from "./_layout.astro";
+
+const pages = await Astro.glob("./*.md")
+---
+
+<Layout>
+  <section>
+    <h1>Ecosystem</h1>
+
+    {pages.map(page => <p><a href={page.url}>{page.frontmatter.title}</a></p>)}
+  </section>
+</Layout>
